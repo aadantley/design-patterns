@@ -6,6 +6,7 @@ from book_interface import IBook
 
 class DramaBook(IBook):
     def __init__(self):
+        self._genre = "drama"
         self._title = "My Sister's Keeper"
         self._page_count = 423
         self._author = "Jodi Picoult"
@@ -18,3 +19,6 @@ class DramaBook(IBook):
 
     def author(self):
         return self._author
+
+    def genre(self):
+        return self._genre

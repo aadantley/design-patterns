@@ -6,6 +6,7 @@ from book_interface import IBook
 
 class ScifiBook(IBook):
     def __init__(self):
+        self._genre = "scifi"
         self._title = "A Scanner Darkly"
         self._page_count = 220
         self._author = "Phillip K. Dick"
@@ -18,3 +19,6 @@ class ScifiBook(IBook):
 
     def author(self):
         return self._author
+
+    def genre(self):
+        return self._genre

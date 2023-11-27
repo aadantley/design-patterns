@@ -2,19 +2,19 @@
 Chair Factory class
 """
 
-from scifi import SciFiBook
+from scifi import ScifiBook
 from drama import DramaBook
 from comedy import ComedyBook
 
 
 class BookFactory:
     @staticmethod
-    def page_count(book):
+    def genre(book):
         if book == "scifi":
-            return SciFiBook()
+            return ScifiBook()
         if book == "drama":
             return DramaBook()
         if book == "comedy":
             return ComedyBook()
         else:
-            return "invalid genre, please update Book Factory."
+            return None
